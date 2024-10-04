@@ -1,0 +1,210 @@
+.what-we-offer {
+    background-image: linear-gradient(var(--background-light-color), var(--background-lightest-color));
+}
+
+.what-we-offer__info {
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.what-we-offer__tabs {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.what-we-offer__title {
+    color: var(--text-title-color);
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+
+.what-we-offer__slogan {
+    color: var(--text-main-color);
+    font-family: 'Gulzar', sans-serif;
+    font-size: 38px;
+    line-height: 2rem;
+    margin-top: 20px;
+}
+
+.what-we-offer__text {
+    color: var(--light-description-color);
+    font-size: 17px;
+    line-height: 2rem;
+    margin-top: 20px;
+}
+
+.what-we-offer__img-container {
+    height: 200px;
+    background-image: url(../img/what-we-offer/monstera-leaves.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+.what-we-offer__buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.what-we-offer__tabs-button, a.btn.btn-primary {
+    font-family: 'Source+Sans+Pro', sans-serif;
+    color: var(--text-title-color);
+    background-color: transparent;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 120px;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    transition: 1s;
+    text-decoration:none;
+    box-shadow: none;
+    margin-top: 10px;
+}
+
+.what-we-offer__tabs-button:hover, a.btn.btn-primary:hover {
+    color: var(--text-main-color);
+    border: none;
+}
+
+.what-we-offer__tabs-indoor {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.what-we-offer__tabs-outdoor {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.what-we-offer__tab-image {
+    height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.what-we-offer__tab-title {
+    color: var(--text-main-color);
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.what-we-offer__tab-text {
+    color: var(--light-description-color);
+    font-size: 17px;
+    line-height: 2rem;
+}
+
+.what-we-offer__all-tabs {
+    overflow: hidden;
+}
+
+.what-we-offer__all-tabs button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.what-we-offer__tab-content {
+    display: none;
+    padding: 6px 12px;
+}
+
+.what-we-offer__tabs-block {
+    background: linear-gradient(var( --background-light-color), white);           
+}
+
+div.card.card-body {
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width: 767px) {
+    .what-we-offer__tab-content {
+        display: contents;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .what-we-offer__tabs-indoor {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 40px;
+    }
+    .what-we-offer__tabs-outdoor {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 40px;
+    }
+    .what-we-offer__tab-image {
+        height: 450px;
+    }
+    .what-we-offer__tab {
+        display: grid;
+        grid-template-columns: auto;
+        align-self: flex-start;
+    }
+    .what-we-offer__img-container {
+        height: 250px;
+        background-image: url(../img/what-we-offer/monstera-leaves.jpg);
+        background-size: cover;
+        background-attachment: fixed; 
+    }
+}
+
+@media(min-width: 990px) {
+    .what-we-offer__tabs-indoor {
+        max-width: 1800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 40px;
+    }
+    .what-we-offer__tabs-outdoor {
+        max-width: 1800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 40px;
+    }
+    .what-we-offer__tab-image {
+        height: 500px;
+    }
+    .what-we-offer__img-container {
+        height: 300px;
+        background-image: url(../img/what-we-offer/monstera-leaves.jpg);
+        background-size: cover;
+        background-attachment: fixed; 
+    }
+}
+
+@media(min-width: 1800px) {
+    .what-we-offer__tabs-indoor {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .what-we-offer__tabs-outdoor {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

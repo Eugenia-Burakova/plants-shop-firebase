@@ -1,0 +1,56 @@
+.brands-carousel {
+    background-image: url(../img/brands-carousel/brands-carousel-background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px 0 100px 0;
+}
+
+.brands-carousel__container {
+    height: 100px;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.brands-carousel__img-box {
+    width: 100%;
+    margin: auto;
+}
+
+.brands-carousel__slide {
+  height: 100px;
+  width: 320px;
+  margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    height: 400px;
+    top: -100px;
+    color: rgba(f,0,f, 0.7);
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .prev img, .next img {
+    position: relative;
+    top: 150px;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 4s;
+    margin: auto;
+  }
+
+  @keyframes fade {
+    from {opacity: 1}
+    to {opacity: .6}
+  }
